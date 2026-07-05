@@ -1,0 +1,139 @@
+:where(*){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: url(../img/special-bg.jpg);
+    display: grid;
+}
+/* NAV */
+.nav{
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    width: 100%;
+    height: 10vh;
+    padding: 1rem 4rem;
+    align-items: center;
+    z-index: 10;
+}
+.nav img{
+    margin-right: auto;
+    width: 4vw;
+    height: 7vh;
+    border-radius: 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
+}
+.nav a:hover{
+    color: rgb(165, 15, 95);
+}
+.nav button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+}
+.nav button:hover{
+    background-color: rgb(100, 100, 100);
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: stretch;
+    margin-top: 10vh;
+}
+.header>img{
+    width: 50%;
+    height: 100%;
+}
+.hero{
+    background-color: deeppink;
+    padding: 2rem 4rem;
+    color: white;
+    width: 50%;
+}
+.hero h1{
+    font-size: 2rem;
+    width: 75%;
+}
+.hero-para{
+    margin: 20px 0;
+    width: 80%;
+}
+.hero-button{
+    margin-top: 60px;
+}
+.hero a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5em 5em;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.hero a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* main */
+.cards{
+    width: min(1200px,90%);
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(330px , 1fr));
+    gap: 10px;
+}
+.card{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+    padding: 10px;
+}
+.card-title{
+    font-size: 28px;
+    color: rgb(165, 15, 95);
+    text-align: center;
+    margin: 10px;
+}
+.card-para{
+    width: 95%;
+    font-size: 18px;
+    margin: 10px;
+}
+.card-button{
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 40px;
+}
+.card img{
+    width: 100%;
+}
+.card a{
+    color: white;
+    background-color: rgb(255, 20, 145);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+.card a:hover{
+    background-color: rgb(165, 15, 95);
+}
+/* FOOTER */
+.footer{
+    background-color: pink;
+    font-size: 28px;
+    text-align: center;
+    padding: 50px 0;
+}
